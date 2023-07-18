@@ -19,11 +19,19 @@ const useCart = create(
         const existingItems = currentItems.find((item) => item.id === data.id);
 
         if (existingItems) {
-          return toast("Item already in cart");
+          return toast("Item already in cart", {
+            style: {
+              border: "1px solid #bfdbfe",
+              padding: "10px",
+              color: "#bfdbfe",
+              background: "#2563eb",
+              borderRadius: "50px",
+            },
+          });
         }
 
         set({ items: [...get().items, data] });
-        toast.success("Iems added to cart.");
+        toast.success("Items added to cart.");
       },
       removeItem: (id: string) => {
         set({ items: [...get().items.filter((item) => item.id !== id)] });

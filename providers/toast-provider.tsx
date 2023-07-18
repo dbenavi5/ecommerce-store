@@ -6,16 +6,20 @@ const ToastProvider = () => {
       toastOptions={{
         success: {
           style: {
-            background: "green",
-            border: "1px solid green",
-            opacity: 0.6,
+            border: "1px solid #22c55e",
+            padding: "10px",
+            background: "#86efac",
+            color: "#052e16",
+            borderRadius: '50px'
           },
         },
         error: {
           style: {
-            background: "red",
-            border: "1px solid red",
-            opacity: 0.6,
+            border: "1px solid #f43f5e",
+            padding: "10px",
+            color: "#4c0519",
+            background: "#fda4af",
+            borderRadius: '50px',
           },
         },
       }}
