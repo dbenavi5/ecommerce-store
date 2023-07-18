@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import "./globals.css";
 import ToastProvider from "@/providers/toast-provider";
 import NightAnnouncement from "@/components/night-announcement";
+import ModalProvider from "@/providers/modal-provider";
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ToastProvider />
-        {/* ModalProvider */}
+        <ModalProvider />
         {isNightTime && <NightAnnouncement />}
         <Navbar />
         <main>{children}</main>
