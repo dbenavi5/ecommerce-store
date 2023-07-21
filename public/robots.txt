@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin           # Disallow crawling of the admin dashboard
+Disallow: /checkout        # Disallow crawling of the checkout process
+Disallow: /account         # Disallow crawling of user account pages
+Disallow: /cart            # Disallow crawling of the shopping cart
+Disallow: /thank-you       # Disallow crawling of thank-you pages after completing a purchase
+Disallow: /product/review  # Disallow crawling of product reviews, if they are not unique content
+
+# Allow crawling of everything else
+Allow: /

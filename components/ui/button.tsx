@@ -8,6 +8,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, children, disabled, type = "button", ...props }, ref) => {
     return (
       <button
+        aria-label='button'
         type={type}
         className={cn(
           `

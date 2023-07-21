@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
-import { Billboard } from "@/types";
+import { Billboard as BillboardType } from "@/types";
 import Image from "next/image";
 
 interface BillboardProps {
-  data: Billboard;
+  data: BillboardType;
   className?: string;
 }
 
