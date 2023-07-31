@@ -21,17 +21,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const currentTime = new Date();
-  const hour = currentTime.getHours();
-
-  // Check if the current time is between 9pm and 9am
-  const isNightTime = hour >= 21 || hour < 9;
+  
   return (
     <html lang="en">
       <body className={font.className}>
         <ToastProvider />
         <ModalProvider />
-        {isNightTime && <NightAnnouncement />}
+        <NightAnnouncement />
         <Navbar />
         <main>{children}</main>
         <Footer />
