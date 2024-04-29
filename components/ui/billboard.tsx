@@ -7,7 +7,7 @@ interface BillboardProps {
   className?: string;
 }
 
-const Billboard: React.FC<BillboardProps> = ({ data, className }) => {
+const Billboard = ({ data, className }: BillboardProps) => {
   return (
     <div className="p-4 sm:p-6 lg:p-8 rounded-xl overflow-hidden">
       {/* Optimized Image */}
