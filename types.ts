@@ -20,6 +20,11 @@ export interface Billboard {
     imageUrl: string;
 }
 
+export interface Store {
+    id: string;
+    name: string;
+}
+
 export interface Category {
     id: string;
     name: string;

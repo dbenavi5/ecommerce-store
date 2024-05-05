@@ -34,7 +34,7 @@ export default function RootLayout({
         <ToastProvider />
         <ModalProvider />
         {isNightTime && <NightAnnouncement />}
-        <Navbar />
+        <Navbar params={{}} />
         <main>{children}</main>
         <Footer />
       </body>

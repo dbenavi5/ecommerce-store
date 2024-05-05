@@ -41,7 +41,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
       <Container>
         <Billboard
           data={category.billboard}
-          className="text-[#5eeaff] bg-gradient-to-r from-black/50 to-black/20"
+          className="text-[#E2FDFF] bg-gradient-to-r from-black/50 to-black/20"
         />
         <div className="px-4 sm:px-6 lg:px-8 pb-24">
           <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">

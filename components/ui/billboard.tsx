@@ -22,7 +22,7 @@ const Billboard = ({ data, className }: BillboardProps) => {
           alt={data?.label}
           fill
           className="aspect-square object-cover rounded-md z-[-1]"
-          unoptimized // Disables vercel optimization
+          // unoptimized // Disables vercel optimization
         />
         <div className="absolute top-24 right-10 h-full w-full flex flex-col justify-center items-left text-center gap-y-8">
           <div className="font-bold text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs">
